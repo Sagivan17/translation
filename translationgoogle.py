@@ -9,6 +9,8 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "ADD PATH TO YOUR GOOGLE CLOUD SE
 # Write translated text from JSON response to new CSV spreadsheet in the same order as the input file training questions
 # Will recieve an output of a csv file called translation_results.csv
 
+# Remember to set the source and target language, language code can be obtained from Google: https://developers.google.com/admin-sdk/directory/v1/languages
+
 
 client = translate.TranslationServiceClient()
 source_language = 'tr'
